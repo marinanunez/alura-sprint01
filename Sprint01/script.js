@@ -35,3 +35,16 @@ function desencriptar(stringParaEncriptar){
     return stringParaEncriptar;
 }
 
+
+function copiar(){
+    var texto = mensaje.value;
+    navigator.clipboard.writeText(texto);
+}
+
+var botonCopiar = document.querySelector("#btncopiar");
+botonCopiar.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    copiar();
+});
+
