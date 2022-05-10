@@ -41,9 +41,10 @@ function copiar(){
 }
 
 var botonCopiar = document.querySelector("#btncopiar");
-botonCopiar.addEventListener("click", function (event) {
+    botonCopiar.addEventListener("click", function (event) {
     event.preventDefault();
 
     copiar();
 });
+
 
