@@ -18,6 +18,11 @@ function encriptar(stringParaEncriptar){
     return stringParaEncriptar;
 }
 
+function btndesencriptar(){
+    const textoEncriptado = desencriptar(inputTexto.value);
+    mensaje.value = textoEncriptado;
+}
+
 function desencriptar(stringParaEncriptar){
     let matrizCodigo = [["enter","e"], ["imes","i"], ["ai","a"], ["ober","o"], ["ufat","u"]]; 
     stringParaEncriptar = stringParaEncriptar.toLowerCase();
@@ -27,3 +32,6 @@ function desencriptar(stringParaEncriptar){
             stringParaEncriptar = stringParaEncriptar.replaceAll(matrizCodigo[i][0], matrizCodigo[i][1]);
         }
     }
+    return stringParaEncriptar;
+}
+
